@@ -1,0 +1,863 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width"/>
+    <title>highlights</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            background-color: #f8f8f8;
+        }
+
+        body>ul {
+            border: 1px solid #ccc;
+            border-radius: 30px;
+            padding: 15px;
+            background-color: #fff;
+        }
+
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+            color: black;
+            font-size: 22px;
+            font-weight: 900;
+        }
+
+        ul ul {
+            color: #424242;
+            font-size: 16px;
+            font-weight: 600;
+        }
+
+        ul ul:first-child {
+            padding-top: 10px;
+        }
+
+        ul ul ul {
+            color: #616161;
+            font-size: 16px;
+            font-weight: 400;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 5px;
+            margin-bottom: 5px;
+        }
+
+        #btn-bar {
+            white-space: nowrap;
+            text-align: center;
+            width: 100%;
+        }
+
+        button {
+            color: #444444;
+            background: #fff;
+            border: 1px #DADADA solid;
+            padding: 5px 10px;
+            border-radius: 2px;
+            font-weight: bold;
+            font-size: 16pt;
+            outline: none;
+            width: 33%;
+        }
+
+        .hint {
+            color: #616161;
+            font-size: 16px;
+            font-weight: 400;
+        }
+    </style>
+</head>
+<body>
+<div id="btn-bar">
+    <button onclick="showAll()">All</button>
+    <button onclick="hideVerse()">Less</button>
+    <button onclick="catsOnly()">Min</button>
+</div>
+<ul>
+    <li>Love
+        <ul>
+            <li>Matthew‬ ‭7:1 - 2‬
+                <ul>
+                    <li>&#34;Do not judge, or you too will be judged. For in the same way you judge others, you will be
+                        judged, and with the measure you use, it will be measured to you.&#34;
+                    </li>
+                </ul>
+            </li>
+            <li>Matthew‬ ‭7:12‬
+                <ul>
+                    <li>&#34;So in everything, do to others what you would have them do to you, for this sums up the Law
+                        and the Prophets.&#34;
+                    </li>
+                </ul>
+            </li>
+            <li>‭‭John‬ ‭14:15‬
+                <ul>
+                    <li>&#34;If you love me, keep my commands.&#34;</li>
+                </ul>
+            </li>
+            <li>‭‭John‬ ‭15:10 - 12‬
+                <ul>
+                    <li>&#34;If you keep my commands, you will remain in my love, just as I have kept my Father’s
+                        commands and remain in his love. I have told you this so that my joy may be in you and that your
+                        joy may be complete. My command is this: Love each other as I have loved you.&#34;
+                    </li>
+                </ul>
+            </li>
+            <li>‭‭Romans‬ ‭13:10‬
+                <ul>
+                    <li>&#34;Love does no harm to a neighbor. Therefore love is the fulfillment of the law.&#34;</li>
+                </ul>
+            </li>
+            <li>Galatians‬ ‭5:14
+                <ul>
+                    <li>&#34;For the entire law is fulfilled in keeping this one command: &#34;Love your neighbor as
+                        yourself.&#34;&#34;
+                    </li>
+                </ul>
+            </li>
+            <li>1 Corinthians‬ ‭13:4 - 7‬
+                <ul>
+                    <li>&#34;Love is patient, love is kind. It does not envy, it does not boast, it is not proud. It
+                        does not dishonor others, it is not self-seeking, it is not easily angered, it keeps no record
+                        of wrongs. Love does not delight in evil but rejoices with the truth. It always protects, always
+                        trusts, always hopes, always perseveres.&#34;
+                    </li>
+                </ul>
+            </li>
+            <li>‭‭‭‭1 John‬ ‭3:18‬
+                <ul>
+                    <li>&#34;Dear children, let us not love with words or speech but with actions and in truth.&#34;
+                    </li>
+                </ul>
+            </li>
+            <li>1 John‬ ‭3:21 - 23‬
+                <ul>
+                    <li>&#34;Dear friends, if our hearts do not condemn us, we have confidence before God and receive
+                        from him anything we ask, because we keep his commands and do what pleases him. And this is his
+                        command: to believe in the name of his Son, Jesus Christ, and to love one another as he
+                        commanded us.&#34;
+                    </li>
+                </ul>
+            </li>
+            <li>Galatians‬ ‭3:28‬
+                <ul>
+                    <li>&#34;There is neither Jew nor Gentile, neither slave nor free, nor is there male and female, for
+                        you are all one in Christ Jesus.&#34;
+                    </li>
+                </ul>
+            </li>
+            <li>Galatians‬ ‭5:6‬
+                <ul>
+                    <li>&#34;For in Christ Jesus neither circumcision nor uncircumcision has any value. The only thing
+                        that counts is faith expressing itself through love.&#34;
+                    </li>
+                </ul>
+            </li>
+            <li>Romans‬ ‭5:5‬
+                <ul>
+                    <li>&#34;And hope does not put us to shame, because God’s love has been poured out into our hearts
+                        through the Holy Spirit, who has been given to us.&#34;
+                    </li>
+                </ul>
+            </li>
+            <li>Matthew‬ ‭5:43-44
+                <ul>
+                    <li>&#34;&#34;You have heard that it was said, ‘Love your neighbor and hate your enemy.’ But I tell
+                        you, love your enemies and pray for those who persecute you,&#34;
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+    <li>Faith
+        <ul>
+            <li>Hebrews‬ ‭11:1‬
+                <ul>
+                    <li>&#34;Now faith is confidence in what we hope for and assurance about what we do not see.&#34;
+                    </li>
+                </ul>
+            </li>
+            <li>Mark‬ ‭11:22 - 25‬
+                <ul>
+                    <li>&#34;&#34;Have faith in God,&#34; Jesus answered. &#34;Truly I tell you, if anyone says to this
+                        mountain, ‘Go, throw yourself into the sea,’ and does not doubt in their heart but believes that
+                        what they say will happen, it will be done for them. Therefore I tell you, whatever you ask for
+                        in prayer, believe that you have received it, and it will be yours. And when you stand praying,
+                        if you hold anything against anyone, forgive them, so that your Father in heaven may forgive you
+                        your sins.&#34;&#34;
+                    </li>
+                </ul>
+            </li>
+            <li>John‬ ‭14:12 - 14‬
+                <ul>
+                    <li>&#34;Very truly I tell you, whoever believes in me will do the works I have been doing, and they
+                        will do even greater things than these, because I am going to the Father. And I will do whatever
+                        you ask in my name, so that the Father may be glorified in the Son. You may ask me for anything
+                        in my name, and I will do it.&#34;
+                    </li>
+                </ul>
+            </li>
+            <li>1 John‬ ‭5:14 - 15‬
+                <ul>
+                    <li>&#34;This is the confidence we have in approaching God: that if we ask anything according to his
+                        will, he hears us. And if we know that he hears us—whatever we ask—we know that we have what we
+                        asked of him.&#34;
+                    </li>
+                </ul>
+            </li>
+            <li>John‬ ‭15:7‬
+                <ul>
+                    <li>&#34;If you remain in me and my words remain in you, ask whatever you wish, and it will be done
+                        for you.&#34;
+                    </li>
+                </ul>
+            </li>
+            <li>Psalm‬ ‭37:4‬
+                <ul>
+                    <li>&#34;Take delight in the Lord, and he will give you the desires of your heart.&#34;</li>
+                </ul>
+            </li>
+            <li>Matthew‬ ‭7:7‬
+                <ul>
+                    <li>&#34;Ask and it will be given to you; seek and you will find; knock and the door will be opened
+                        to you.&#34;
+                    </li>
+                </ul>
+            </li>
+            <li>James‬ ‭1:5 - 6
+                <ul>
+                    <li>&#34;If any of you lacks wisdom, you should ask God, who gives generously to all without finding
+                        fault, and it will be given to you. But when you ask, you must believe and not doubt, because
+                        the one who doubts is like a wave of the sea, blown and tossed by the wind.&#34;
+                    </li>
+                </ul>
+            </li>
+            <li>Matthew‬ ‭18:19 - 20‬
+                <ul>
+                    <li>&#34;Again, truly I tell you that if two of you on earth agree about anything they ask for, it
+                        will be done for them by my Father in heaven. For where two or three gather in my name, there am
+                        I with them.&#34;
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+    <li>Peace
+        <ul>
+            <li>John‬ ‭14:27‬
+                <ul>
+                    <li>&#34;Peace I leave with you; my peace I give you. I do not give to you as the world gives. Do
+                        not let your hearts be troubled and do not be afraid.&#34;
+                    </li>
+                </ul>
+            </li>
+            <li>Matthew‬ ‭11:28 - 30‬
+                <ul>
+                    <li>&#34;&#34;Come to me, all you who are weary and burdened, and I will give you rest. Take my yoke
+                        upon you and learn from me, for I am gentle and humble in heart, and you will find rest for your
+                        souls. For my yoke is easy and my burden is light.&#34;&#34;
+                    </li>
+                </ul>
+            </li>
+            <li>Philippians‬ ‭4:6 - 7‬
+                <ul>
+                    <li>&#34;Do not be anxious about anything, but in every situation, by prayer and petition, with
+                        thanksgiving, present your requests to God. And the peace of God, which transcends all
+                        understanding, will guard your hearts and your minds in Christ Jesus.&#34;
+                    </li>
+                </ul>
+            </li>
+            <li>Romans‬ ‭14:17‬
+                <ul>
+                    <li>&#34;For the kingdom of God is not a matter of eating and drinking, but of righteousness, peace
+                        and joy in the Holy Spirit,&#34;
+                    </li>
+                </ul>
+            </li>
+            <li>Psalms‬ ‭16:11‬
+                <ul>
+                    <li>&#34;You will show me the path of life; In Your presence is fullness of joy; At Your right hand
+                        are pleasures forevermore.&#34;
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+    <li>Prayer
+        <ul>
+            <li>Psalm‬ ‭100:4‬
+                <ul>
+                    <li>&#34;Enter his gates with thanksgiving and his courts with praise; give thanks to him and praise
+                        his name.&#34;
+                    </li>
+                </ul>
+            </li>
+            <li>1 John‬ ‭1:9‬
+                <ul>
+                    <li>&#34;If we confess our sins, he is faithful and just and will forgive us our sins and purify us
+                        from all unrighteousness.&#34;
+                    </li>
+                </ul>
+            </li>
+            <li>John‬ ‭16:24‬
+                <ul>
+                    <li>&#34;Until now you have not asked for anything in my name. Ask and you will receive, and your
+                        joy will be complete.&#34;
+                    </li>
+                </ul>
+            </li>
+            <li>1 Corinthians‬ ‭14:2‬
+                <ul>
+                    <li>&#34;For anyone who speaks in a tongue does not speak to people but to God. Indeed, no one
+                        understands them; they utter mysteries by the Spirit.&#34;
+                    </li>
+                </ul>
+            </li>
+            <li>Psalm‬ ‭46:10‬
+                <ul>
+                    <li>&#34;He says, &#34;Be still, and know that I am God; I will be exalted among the nations, I will
+                        be exalted in the earth.&#34;&#34;
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+    <li>In the Spirit
+        <ul>
+            <li>Galatians‬ ‭5:22 - 23‬
+                <ul>
+                    <li>&#34;But the fruit of the Spirit is love, joy, peace, patience, kindness, goodness,
+                        faithfulness, gentleness, self-control; against such things there is no law.&#34;
+                    </li>
+                </ul>
+            </li>
+            <li>Ephesians‬ ‭5:18‬
+                <ul>
+                    <li>&#34;Do not get drunk on wine, which leads to debauchery. Instead, be filled with the Spirit,&#34;</li>
+                </ul>
+            </li>
+            <li>John‬ ‭4:24‬
+                <ul>
+                    <li>&#34;God is spirit, and his worshipers must worship in the Spirit and in truth.&#34;&#34;</li>
+                </ul>
+            </li>
+            <li>1 Peter‬ ‭5:7‬
+                <ul>
+                    <li>&#34;Cast all your anxiety on him because he cares for you.&#34;</li>
+                </ul>
+            </li>
+            <li>James‬ ‭4:8‬
+                <ul>
+                    <li>&#34;Come near to God and he will come near to you. Wash your hands, you sinners, and purify
+                        your hearts, you double-minded.&#34;
+                    </li>
+                </ul>
+            </li>
+            <li>Jeremiah‬ ‭29:13‬
+                <ul>
+                    <li>&#34;You will seek me and find me when you seek me with all your heart.&#34;</li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+    <li>The Holy Spirit
+        <ul>
+            <li>John‬ ‭14:26‬
+                <ul>
+                    <li>&#34;But the Advocate, the Holy Spirit, whom the Father will send in my name, will teach you all
+                        things and will remind you of everything I have said to you.&#34;
+                    </li>
+                </ul>
+            </li>
+            <li>John‬ ‭16:13‬
+                <ul>
+                    <li>&#34;But when he, the Spirit of truth, comes, he will guide you into all the truth. He will not
+                        speak on his own; he will speak only what he hears, and he will tell you what is yet to come.&#34;
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+    <li>Led by the Spirit
+        <ul>
+            <li>Romans‬ ‭8:14
+                <ul>
+                    <li>&#34;For those who are led by the Spirit of God are the children of God.&#34;</li>
+                </ul>
+            </li>
+            <li>John‬ ‭10:27‬
+                <ul>
+                    <li>&#34;My sheep listen to my voice; I know them, and they follow me.&#34;</li>
+                </ul>
+            </li>
+            <li>Galatians‬ ‭5:16‬
+                <ul>
+                    <li>&#34;So I say, walk by the Spirit, and you will not gratify the desires of the flesh.&#34;</li>
+                </ul>
+            </li>
+            <li>Galatians‬ ‭5:18
+                <ul>
+                    <li>&#34;But if you are led by the Spirit, you are not under the law.&#34;</li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+    <li>Signs and wonders
+        <ul>
+            <li>Acts‬ ‭1:8‬
+                <ul>
+                    <li>&#34;But you will receive power when the Holy Spirit comes on you; and you will be my witnesses
+                        in Jerusalem, and in all Judea and Samaria, and to the ends of the earth.&#34;&#34;
+                    </li>
+                </ul>
+            </li>
+            <li>Mark‬ ‭16:17 - 18‬
+                <ul>
+                    <li>&#34;And these signs will accompany those who believe: In my name they will drive out demons;
+                        they will speak in new tongues; they will pick up snakes with their hands; and when they drink
+                        deadly poison, it will not hurt them at all; they will place their hands on sick people, and
+                        they will get well.&#34;&#34;
+                    </li>
+                </ul>
+            </li>
+            <li>1 Corinthians‬ ‭12:8 - 10‬
+                <ul>
+                    <li>&#34;For to one is given by the Spirit the word of wisdom; to another the word of knowledge by
+                        the same Spirit; To another faith by the same Spirit; to another the gifts of healing by the
+                        same Spirit; To another the working of miracles; to another prophecy; to another discerning of
+                        spirits; to another divers kinds of tongues; to another the interpretation of tongues:&#34;
+                    </li>
+                </ul>
+            </li>
+            <li>John‬ ‭7:38‬
+                <ul>
+                    <li>&#34;Whoever believes in me, as Scripture has said, rivers of living water will flow from within
+                        them.&#34;&#34;
+                    </li>
+                </ul>
+            </li>
+            <li>‭‭1 ‭Corinthians 2:4‬
+                <ul>
+                    <li>&#34;My message and my preaching were not with wise and persuasive words, but with a
+                        demonstration of the Spirit’s power,&#34;
+                    </li>
+                </ul>
+            </li>
+            <li>1 Corinthians‬ ‭4:20‬
+                <ul>
+                    <li>&#34;For the kingdom of God is not a matter of talk but of power.&#34;</li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+    <li>Salvation and freedom
+        <ul>
+            <li>John‬ ‭3:16‬
+                <ul>
+                    <li>&#34;For God so loved the world that he gave his one and only Son, that whoever believes in him
+                        shall not perish but have eternal life.&#34;
+                    </li>
+                </ul>
+            </li>
+            <li>Ephesians‬ ‭2:8‬
+                <ul>
+                    <li>&#34;For it is by grace you have been saved, through faith—and this is not from yourselves, it
+                        is the gift of God—&#34;
+                    </li>
+                </ul>
+            </li>
+            <li>John‬ ‭3:3
+                <ul>
+                    <li>&#34;Jesus replied, &#34;Very truly I tell you, no one can see the kingdom of God unless they
+                        are born again. &#34;&#34;
+                    </li>
+                </ul>
+            </li>
+            <li>2 Corinthians‬ ‭5:17‬
+                <ul>
+                    <li>&#34;Therefore, if anyone is in Christ, the new creation has come: The old has gone, the new is
+                        here!&#34;
+                    </li>
+                </ul>
+            </li>
+            <li>Psalm‬ ‭103:12‬
+                <ul>
+                    <li>&#34;as far as the east is from the west, so far has he removed our transgressions from
+                        us.&#34;
+                    </li>
+                </ul>
+            </li>
+            <li>John‬ ‭8:36‬
+                <ul>
+                    <li>&#34;So if the Son sets you free, you will be free indeed.&#34;</li>
+                </ul>
+            </li>
+            <li>2 Corinthians‬ ‭3:17‬
+                <ul>
+                    <li>&#34;Now the Lord is the Spirit, and where the Spirit of the Lord is, there is freedom.&#34;
+                    </li>
+                </ul>
+            </li>
+            <li>John‬ ‭11:25‬
+                <ul>
+                    <li>&#34;Jesus said to her, &#34;I am the resurrection and the life. The one who believes in me will
+                        live, even though they die;&#34;
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+    <li>Encouragement
+        <ul>
+            <li>Romans‬ ‭8:28‬
+                <ul>
+                    <li>&#34;And we know that in all things God works for the good of those who love him, who have been
+                        called according to his purpose.&#34;
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+    <li>Protection
+        <ul>
+            <li>Psalm‬ ‭7:10‬
+                <ul>
+                    <li>&#34;My shield is God Most High, who saves the upright in heart.&#34;</li>
+                </ul>
+            </li>
+            <li>Psalm‬ ‭91:9 - 10‬
+                <ul>
+                    <li>&#34;If you say, &#34;The Lord is my refuge,&#34; and you make the Most High your dwelling, no
+                        harm will overtake you, no disaster will come near your tent.&#34;
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+    <li>Empowerment
+        <ul>
+            <li>Philippians‬ ‭4:13‬
+                <ul>
+                    <li>&#34;I can do all things through Christ who strengthens me.&#34;</li>
+                </ul>
+            </li>
+            <li>Nehemiah‬ ‭8:10‬
+                <ul>
+                    <li>&#34;Nehemiah said, &#34;Go and enjoy choice food and sweet drinks, and send some to those who
+                        have nothing prepared. This day is holy to our Lord. Do not grieve, for the joy of the Lord is
+                        your strength.&#34;&#34;
+                    </li>
+                </ul>
+            </li>
+            <li>2 Timothy‬ ‭1:7‬
+                <ul>
+                    <li>&#34;For God hath not given us the spirit of fear; but of power, and of love, and of a sound
+                        mind.&#34;
+                    </li>
+                </ul>
+            </li>
+            <li>1 John‬ ‭4:4‬
+                <ul>
+                    <li>&#34;You, dear children, are from God and have overcome them, because the one who is in you is
+                        greater than the one who is in the world.&#34;
+                    </li>
+                </ul>
+            </li>
+            <li>Romans‬ ‭8:31‬
+                <ul>
+                    <li>&#34;What, then, shall we say in response to these things? If God is for us, who can be against
+                        us?&#34;
+                    </li>
+                </ul>
+            </li>
+            <li>Romans‬ ‭8:37‬
+                <ul>
+                    <li>&#34;No, in all these things we are more than conquerors through him who loved us.&#34;</li>
+                </ul>
+            </li>
+            <li>Matthew‬ ‭19:26‬
+                <ul>
+                    <li>&#34;Jesus looked at them and said, &#34;With man this is impossible, but with God all things
+                        are possible.&#34;&#34;
+                    </li>
+                </ul>
+            </li>
+            <li>Mark‬ ‭9:23‬
+                <ul>
+                    <li>&#34;&#34;‘If you can’?&#34; said Jesus. &#34;Everything is possible for one who believes.&#34;&#34;</li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+    <li>God with me
+        <ul>
+            <li>Romans‬ ‭8:38 - 39‬
+                <ul>
+                    <li>&#34;For I am convinced that (nothing) neither death nor life, neither angels nor demons,
+                        neither the present nor the future, nor any powers, neither height nor depth, nor anything else
+                        in all creation, will be able to separate us from the love of God that is in Christ Jesus our
+                        Lord.&#34;
+                    </li>
+                </ul>
+            </li>
+            <li>Hebrews‬ ‭13:5‬
+                <ul>
+                    <li>&#34;Keep your lives free from the love of money and be content with what you have, because God
+                        has said, &#34;Never will I leave you; never will I forsake you.&#34;&#34;
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+    <li>Health
+        <ul>
+            <li>Isaiah‬ ‭53:5‬
+                <ul>
+                    <li>&#34;But he was pierced for our transgressions, he was crushed for our iniquities; the
+                        punishment that brought us peace was on him, and by his wounds we are healed.&#34;
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+    <li>Legalism
+        <ul>
+            <li>Romans‬ ‭8:1 - 2‬
+                <ul>
+                    <li>&#34;Therefore, there is now no condemnation for those who are in Christ Jesus, because through
+                        Christ Jesus the law of the Spirit who gives life has set you free from the law of sin and
+                        death.&#34;
+                    </li>
+                </ul>
+            </li>
+            <li>Colossians‬ ‭2:13 - 14‬
+                <ul>
+                    <li>&#34;When you were dead in your sins and in the uncircumcision of your flesh, God made you alive
+                        with Christ. He forgave us all our sins, having canceled the charge of our legal indebtedness,
+                        which stood against us and condemned us; he has taken it away, nailing it to the cross.&#34;
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+    <li>Provision, prosperity
+        <ul>
+            <li>Philippians‬ ‭4:19‬
+                <ul>
+                    <li>&#34;And my God will meet all your needs according to the riches of his glory in Christ Jesus.&#34;</li>
+                </ul>
+            </li>
+            <li>Psalm‬ ‭23:6‬
+                <ul>
+                    <li>&#34;Surely your goodness and love will follow me all the days of my life, and I will dwell in
+                        the house of the Lord forever.&#34;
+                    </li>
+                </ul>
+            </li>
+            <li>Psalm‬ ‭27:13‬
+                <ul>
+                    <li>&#34;I remain confident of this: I will see the goodness of the Lord in the land of the living.&#34;</li>
+                </ul>
+            </li>
+            <li>Jeremiah‬ ‭29:11‬
+                <ul>
+                    <li>&#34;For I know the plans I have for you,&#34; declares the Lord, &#34;plans to prosper you and
+                        not to harm you, plans to give you hope and a future.&#34;
+                    </li>
+                </ul>
+            </li>
+            <li>John‬ ‭10:10‬
+                <ul>
+                    <li>&#34;The thief comes only to steal and kill and destroy; I have come that they may have life,
+                        and have it to the full.&#34;
+                    </li>
+                </ul>
+            </li>
+            <li>Psalm‬ ‭112:3‬
+                <ul>
+                    <li>&#34;Wealth and riches are in their houses, and their righteousness endures forever.&#34;</li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+    <li>Children
+        <ul>
+            <li>Psalm‬ ‭112:2‬
+                <ul>
+                    <li>&#34;Their children will be mighty in the land; the generation of the upright will be blessed.&#34;</li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+    <li>Character
+        <ul>
+            <li>Matthew‬ ‭5:3 - 10‬
+                <ul>
+                    <li>&#34;&#34;Blessed are the poor in spirit, for theirs is the kingdom of heaven. Blessed are those
+                        who mourn, for they will be comforted. Blessed are the meek, for they will inherit the earth.
+                        Blessed are those who hunger and thirst for righteousness, for they will be filled. Blessed are
+                        the merciful, for they will be shown mercy. Blessed are the pure in heart, for they will see
+                        God. Blessed are the peacemakers, for they will be called children of God. Blessed are those who
+                        are persecuted because of righteousness, for theirs is the kingdom of heaven.&#34;
+                    </li>
+                </ul>
+            </li>
+            <li>Ephesians‬ ‭6:10 - 18‬
+                <ul>
+                    <li>&#34;Finally, be strong in the Lord and in his mighty power. Put on the full armor of God, so
+                        that you can take your stand against the devil’s schemes. For our struggle is not against flesh
+                        and blood, but against the rulers, against the authorities, against the powers of this dark
+                        world and against the spiritual forces of evil in the heavenly realms. Therefore put on the full
+                        armor of God, so that when the day of evil comes, you may be able to stand your ground, and
+                        after you have done everything, to stand. Stand firm then, with the belt of truth buckled around
+                        your waist, with the breastplate of righteousness in place, and with your feet fitted with the
+                        readiness that comes from the gospel of peace. In addition to all this, take up the shield of
+                        faith, with which you can extinguish all the flaming arrows of the evil one. Take the helmet of
+                        salvation and the sword of the Spirit, which is the word of God. And pray in the Spirit on all
+                        occasions with all kinds of prayers and requests. With this in mind, be alert and always keep on
+                        praying for all the Lord’s people.&#34;
+                    </li>
+                </ul>
+            </li>
+            <li>Philippians‬ ‭4:8‬
+                <ul>
+                    <li>&#34;Finally, brothers and sisters, whatever is true, whatever is noble, whatever is right,
+                        whatever is pure, whatever is lovely, whatever is admirable—if anything is excellent or
+                        praiseworthy—think about such things.&#34;
+                    </li>
+                </ul>
+            </li>
+            <li>Matthew‬ ‭6:33‬
+                <ul>
+                    <li>&#34;But seek ye first the kingdom of God, and his righteousness; and all these things shall be
+                        added unto you.&#34;
+                    </li>
+                </ul>
+            </li>
+            <li>John‬ ‭3:30‬
+                <ul>
+                    <li>&#34;He must become greater; I must become less.&#34;</li>
+                </ul>
+            </li>
+            <li>1 Timothy‬ ‭4:7‬
+                <ul>
+                    <li>&#34;Have nothing to do with godless myths and old wives’ tales; rather, train yourself to be
+                        godly.&#34;
+                    </li>
+                </ul>
+            </li>
+            <li>Luke‬ ‭6:45‬
+                <ul>
+                    <li>&#34;A good man brings good things out of the good stored up in his heart, and an evil man
+                        brings evil things out of the evil stored up in his heart. For the mouth speaks what the heart
+                        is full of.&#34;
+                    </li>
+                </ul>
+            </li>
+            <li>Luke‬ ‭14:11‬
+                <ul>
+                    <li>&#34;For all those who exalt themselves will be humbled, and those who humble themselves will be
+                        exalted.&#34;
+                    </li>
+                </ul>
+            </li>
+            <li>Ephesians‬ ‭4:29‬
+                <ul>
+                    <li>&#34;Do not let any unwholesome talk come out of your mouths, but only what is helpful for
+                        building others up according to their needs, that it may benefit those who listen.&#34;
+                    </li>
+                </ul>
+            </li>
+            <li>Proverbs‬ ‭18:21‬
+                <ul>
+                    <li>&#34;The tongue has the power of life and death, and those who love it will eat its
+                        fruit.&#34;
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+</ul>
+<script>
+    document.querySelectorAll("body>ul>li").forEach(function (i, idx) {
+        var ul = Array.from(i.children)[0];
+        var cnt = ul.children.length;
+        var fc = i.firstChild;
+        var txt = fc.textContent;
+        fc.textContent = txt + " (" + cnt + ")";
+    });
+
+    document.querySelectorAll("body>ul>li>ul>li").forEach(function (i, idx) {
+        var arr = Array.from(i.children);
+        var cx = arr[0].innerText;
+        var i1 = cx.indexOf(" ") + 1;
+        var i2 = cx.indexOf(" ", i1) + 1;
+        var i3 = cx.indexOf(" ", i2) + 1;
+        var s = "(" + cx.substring(1, i3).trim() + ")";
+        var span = document.createElement("span");
+        var txt = document.createTextNode(s);
+        span.appendChild(txt);
+        span.classList.add("hint");
+        span.style.display = "none";
+        span.addEventListener("click", function(evt) {
+            var li = Array.from(evt.target.nextSibling.children)[0];
+            if (li.style.display === "none") {
+                li.style.display = "initial";
+            } else {
+                li.style.display = "none";
+            }
+        });
+        i.insertBefore(span, arr[0]);
+    });
+
+    function showAll() {
+        showAllListItems();
+        hideHints();
+    }
+
+    function hideVerse() {
+        showAllListItems();
+        hideVerses();
+        showHints();
+    }
+
+    function catsOnly() {
+        document.querySelectorAll("body>ul>li>ul>li").forEach(function (i, idx) {
+            i.style.display = "none";
+        });
+    }
+
+    function showAllListItems() {
+        document.querySelectorAll("li").forEach(function (i, idx) {
+            i.style.display = "initial";
+        });
+    }
+
+    function showVerses() {
+        document.querySelectorAll(".hint").forEach(function (i, idx) {
+            i.style.display = "initial";
+        });
+    }
+
+    function hideVerses() {
+        document.querySelectorAll("body>ul>li>ul>li>ul>li").forEach(function (i, idx) {
+            i.style.display = "none";
+        });
+    }
+
+    function showHints() {
+        document.querySelectorAll(".hint").forEach(function (i, idx) {
+            i.style.display = "initial";
+        });
+    }
+
+    function hideHints() {
+        document.querySelectorAll(".hint").forEach(function (i, idx) {
+            i.style.display = "none";
+        });
+    }
+
+</script>
+</body>
+<html>
