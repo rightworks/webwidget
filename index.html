@@ -49,6 +49,18 @@
             width: 100%;
         }
 
+        select {
+            color: #444444;
+            background: #fff;
+            border: 1px #DADADA solid;
+            padding: 5px 10px;
+            border-radius: 2px;
+            font-weight: bold;
+            font-size: 16pt;
+            outline: none;
+            width: 50%;
+        }
+
         button {
             color: #444444;
             background: #fff;
@@ -58,23 +70,34 @@
             font-weight: bold;
             font-size: 16pt;
             outline: none;
-            width: 33%;
+            width: 50%;
         }
+
+        .active {
+            box-shadow: 0px 0px 5px aqua;
+        }
+
 
         .hint {
             color: #616161;
             font-size: 16px;
             font-weight: 400;
         }
+
+        .hidden {
+            display: none;
+        }
     </style>
 </head>
 <body>
 <div id="btn-bar">
-    <button onclick="showAll()">All</button>
-    <button onclick="hideVerse()">Less</button>
-    <button onclick="catsOnly()">Min</button>
+    <select id="lang" onchange="changeLang()">
+        <option value="afr" selected="selected">Afrikaans</option>
+        <option value="eng">English</option>
+    </select>
+    <button onclick="changeDisplayStyle(this)">-</button>
 </div>
-<ul>
+<ul class="eng lang hidden">
     <li>Love
         <ul>
             <li>Matthew‬ ‭7:1 - 2‬
@@ -785,6 +808,804 @@
         </ul>
     </li>
 </ul>
+
+
+<ul class="afr lang">
+    <li>Liefde
+        <ul>
+            <li>Mattheus 7:1 - 2
+                <ul>
+                    <li>Moenie oordeel nie, sodat julle nie geoordeel word nie. Want met die oordeel waarmee julle
+                        oordeel, sal julle geoordeel word; en met die maat waarmee julle meet, sal weer vir julle gemeet
+                        word.
+                    </li>
+                </ul>
+            </li>
+            <li>Mattheus 7:12
+                <ul>
+                    <li>Alles wat julle dan wil h&#234; dat die mense aan julle moet doen, net so moet julle aan hulle
+                        ook
+                        doen; want dit is die wet en die profete.
+                    </li>
+                </ul>
+            </li>
+            <li>Johannes 14:15
+                <ul>
+                    <li>As julle My liefhet, bewaar my gebooie.</li>
+                </ul>
+            </li>
+            <li>Johannes 15:10 - 12
+                <ul>
+                    <li>As julle my gebooie bewaar, sal julle in my liefde bly, net soos Ek die gebooie van my Vader
+                        bewaar en in sy liefde bly. Dit het Ek vir julle ges&#234;, dat my blydskap in julle kan bly en
+                        julle blydskap
+                        volkome kan word.
+                        Dit is my gebod, dat julle mekaar moet liefh&#234; net soos Ek julle liefgehad het.
+                    </li>
+                </ul>
+            </li>
+            <li>Romeine 13:10
+                <ul>
+                    <li>Die liefde doen die naaste geen kwaad nie; daarom is die liefde die vervulling van die wet.</li>
+                </ul>
+            </li>
+            <li>Galasi&#235;rs5:14
+                <ul>
+                    <li>Want die hele wet word vervul in een woord, naamlik: Jy moet jou naaste liefh&#234; soos
+                        jouself.
+                    </li>
+                </ul>
+            </li>
+            <li>1 Korinti&#235;rs 13:4 - 7
+                <ul>
+                    <li>Die liefde is lankmoedig en vriendelik; die liefde is nie jaloers nie; die liefde praat nie
+                        groot nie, is
+                        nie opgeblase nie, handel nie onwelvoeglik nie, soek nie sy eie belang nie, word nie verbitterd
+                        nie, reken
+                        die kwaad nie toe nie, is nie bly oor die ongeregtigheid nie, maar is bly saam met die waarheid.
+                        Dit bedek
+                        alles, glo alles, hoop alles, verdra alles.
+                    </li>
+                </ul>
+            </li>
+            <li>1 Johannes 3:18
+                <ul>
+                    <li>My kinders, laat ons nie liefh&#234; met woorde of met die tong nie, maar met die daad en in
+                        waarheid.
+                    </li>
+                </ul>
+            </li>
+            <li>1 Johannes 3:21 - 23
+                <ul>
+                    <li>Geliefdes, as ons hart ons nie veroordeel nie, dan het ons vrymoedigheid teenoor God; en wat ons
+                        ook al bid,
+                        ontvang ons van Hom, omdat ons sy gebooie bewaar en doen wat welgevallig is voor Hom. En dit is
+                        sy gebod,
+                        dat ons in die Naam van sy Seun, Jesus Christus, moet glo en mekaar liefh&#234; soos Hy ons 'n
+                        gebod
+                        gegee het.
+                    </li>
+                </ul>
+            </li>
+            <li>Galasi&#235;rs3:28
+                <ul>
+                    <li>Daar is nie meer Jood of Griek nie, daar is nie meer slaaf of vryman nie, daar is nie meer man
+                        en vrou nie;
+                        want julle is almal een in Christus Jesus.
+                    </li>
+                </ul>
+            </li>
+            <li>Galasi&#235;rs5:6
+                <ul>
+                    <li>Want in Christus Jesus het n&#243;g die besnydenis n&#243;g die onbesnedenheid enige krag, maar die geloof
+                        wat deur
+                        die liefde werk.
+                    </li>
+                </ul>
+            </li>
+            <li>Romeine 5:5
+                <ul>
+                    <li>en die hoop beskaam nie, omdat die liefde van God in ons harte uitgestort is deur die Heilige
+                        Gees wat aan
+                        ons gegee is.
+                    </li>
+                </ul>
+            </li>
+            <li>Mattheus 5:43 - 44
+                <ul>
+                    <li>Julle het gehoor dat daar ges&#234; is: Jy moet jou naaste liefh&#234; en jou vyand moet jy
+                        haat. Maar Ek
+                        s&#234; vir
+                        julle: Julle moet jul vyande liefh&#234;; se&#235;n die wat vir julle vervloek, doen goed aan die wat
+                        vir
+                        julle haat,
+                        en bid vir die wat julle beledig en julle vervolg;
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+    <li>Geloof
+        <ul>
+            <li>Hebrers 11:1
+                <ul>
+                    <li>Die geloof dan is 'n vaste vertroue op die dinge wat ons hoop, 'n bewys van die dinge wat ons
+                        nie sien
+                        nie.
+                    </li>
+                </ul>
+            </li>
+            <li>Markus 11:22 - 25
+                <ul>
+                    <li>Jesus antwoord en s&#234; vir hulle: Julle moet geloof in God h&#234;. Want, voorwaar Ek s&#234;
+                        vir julle dat
+                        elkeen wat
+                        vir hierdie berg s&#234;: Hef jou op en werp jou in die see--en nie in sy hart twyfel nie, maar
+                        glo
+                        dat wat hy
+                        s&#234;, sal gebeur--hy sal verkry net wat hy s&#234;. Daarom s&#234; Ek vir julle: Alles wat
+                        julle in die
+                        gebed vra, glo
+                        dat julle dit sal ontvang, en julle sal dit verkry. En wanneer julle staan en bid, vergeef as
+                        julle iets
+                        teen iemand het, sodat julle Vader wat in die hemele is, ook julle jul oortredinge mag vergewe.
+                    </li>
+                </ul>
+            </li>
+            <li>Johannes 14:12 - 14
+                <ul>
+                    <li>Voorwaar, voorwaar Ek s&#234; vir julle, wie in My glo--die werke wat Ek doen, sal hy ook doen;
+                        en hy
+                        sal groter
+                        werke doen as dit, omdat Ek na my Vader gaan. En wat julle ook al in my Naam mag vra, dit sal Ek
+                        doen, sodat
+                        die Vader in die Seun verheerlik kan word. As julle iets in my Naam vra, sal Ek dit doen.
+                    </li>
+                </ul>
+            </li>
+            <li>1 Johannes 5:14 - 15
+                <ul>
+                    <li>En dit is die vrymoedigheid wat ons teenoor Hom het, dat Hy ons verhoor as ons iets vra volgens
+                        sy wil. En
+                        as ons weet dat Hy ons verhoor, dan weet ons dat, wat ons ook al vra, ons die bedes verkry wat
+                        ons van Hom
+                        gevra het.
+                    </li>
+                </ul>
+            </li>
+            <li>Johannes 15:7
+                <ul>
+                    <li>As julle in My bly en my woorde in julle, sal julle vra net wat julle wil h&#234;, en julle sal
+                        dit
+                        verkry.
+                    </li>
+                </ul>
+            </li>
+            <li>Psalms 37:4
+                <ul>
+                    <li>en verlustig jou in die HERE; dan sal Hy jou gee die begeertes van jou hart.</li>
+                </ul>
+            </li>
+            <li>Mattheus 7:7
+                <ul>
+                    <li>Bid, en vir julle sal gegee word; soek, en julle sal vind; klop, en vir julle sal oopgemaak
+                        word.
+                    </li>
+                </ul>
+            </li>
+            <li>Jakobus 1:5 - 6
+                <ul>
+                    <li>En as iemand van julle wysheid kortkom, laat hom dit van God bid, wat aan almal eenvoudig gee
+                        sonder om te
+                        verwyt, en dit sal aan hom gegee word. Maar hy moet in die geloof bid, sonder om te twyfel; want
+                        hy wat
+                        twyfel, is soos 'n golf van die see wat deur die wind gedrywe en voortgesweep word.
+                    </li>
+                </ul>
+            </li>
+            <li>Mattheus 18:19 - 20
+                <ul>
+                    <li>Weer s&#234; Ek vir julle: As twee van julle saamstem op die aarde oor enige saak wat hulle mag
+                        vra,
+                        dit sal
+                        hulle ten deel val van my Vader wat in die hemele is. Want waar twee of drie in my Naam
+                        vergader, daar is Ek
+                        in hul midde.
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+    <li>Vrede
+        <ul>
+            <li>Johannes 14:27
+                <ul>
+                    <li>Vrede laat Ek vir julle na, my vrede gee Ek aan julle; nie soos die w&#234;reld gee, gee Ek aan
+                        julle
+                        nie. Laat
+                        julle hart nie ontsteld word en bang wees nie.
+                    </li>
+                </ul>
+            </li>
+            <li>Mattheus 11:28 - 30
+                <ul>
+                    <li>Kom na My toe, almal wat vermoeid en belas is, en Ek sal julle rus gee. Neem my juk op julle en
+                        leer van My,
+                        want Ek is sagmoedig en nederig van hart, en julle sal rus vind vir julle siele; want my juk is
+                        sag en my
+                        las is lig.
+                    </li>
+                </ul>
+            </li>
+            <li>Filippense 4:6 - 7
+                <ul>
+                    <li>Wees oor niks besorg nie, maar laat julle begeertes in alles deur gebed en smeking met
+                        danksegging bekend
+                        word by God. En die vrede van God, wat alle verstand te bowe gaan, sal julle harte en julle
+                        sinne bewaar in
+                        Christus Jesus.
+                    </li>
+                </ul>
+            </li>
+            <li>Romeine 14:17
+                <ul>
+                    <li>Want die koninkryk van God is nie spys en drank nie, maar geregtigheid en vrede en blydskap in
+                        die Heilige
+                        Gees.
+                    </li>
+                </ul>
+            </li>
+            <li>Psalms 16:11
+                <ul>
+                    <li>U sal my die pad van die lewe bekend maak; versadiging van vreugde is voor u aangesig,
+                        lieflikhede in u
+                        regterhand, vir ewig.
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+    <li>Gebed
+        <ul>
+            <li>Psalms 100:4
+                <ul>
+                    <li>Gaan sy poorte in met lof, sy voorhowe met lofgesang; loof Hom, prys sy Naam.</li>
+                </ul>
+            </li>
+            <li>1 Johannes 1:9
+                <ul>
+                    <li>As ons ons sondes bely, Hy is getrou en regverdig om ons die sondes te vergewe en ons van alle
+                        ongeregtigheid te reinig.
+                    </li>
+                </ul>
+            </li>
+            <li>Johannes 16:24
+                <ul>
+                    <li>Tot nou toe het julle niks in my Naam gevra nie. Bid en julle sal ontvang, sodat julle blydskap
+                        volkome kan
+                        wees.
+                    </li>
+                </ul>
+            </li>
+            <li>1 Korinti&#235;rs 14:2
+                <ul>
+                    <li>Want hy wat in 'n taal spreek, spreek nie tot mense nie, maar tot God; want niemand verstaan dit
+                        nie, maar
+                        deur die Gees spreek hy verborgenhede.
+                    </li>
+                </ul>
+            </li>
+            <li>Psalms 46:11
+                <ul>
+                    <li>
+                        Wees stil en weet Ek is God! Ek sal vereer word deur die nasies, verhewe wees oor die hele
+                        aarde.
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+    <li>In die Gees
+        <ul>
+            <li>Galasi&#235;rs5:22 - 23
+                <ul>
+                    <li>Maar die vrug van die Gees is liefde, blydskap, vrede, lankmoedigheid, vriendelikheid, goedheid,
+                        getrouheid,
+                        sagmoedigheid, selfbeheersing. Teen sulke dinge is die wet nie.
+                    </li>
+                </ul>
+            </li>
+            <li>Efesi&#235;rs 5:18
+                <ul>
+                    <li>Moenie dronk word van wyn nie--daarin is losbandigheid; maar word met die Gees vervul.</li>
+                </ul>
+            </li>
+            <li>Johannes 4:24
+                <ul>
+                    <li>God is Gees; en die wat Hom aanbid, moet in gees en waarheid aanbid.</li>
+                </ul>
+            </li>
+            <li>1 Petrus 5:7
+                <ul>
+                    <li>Werp al julle bekommernis op Hom, want Hy sorg vir julle.</li>
+                </ul>
+            </li>
+            <li>Jakobus 4:8
+                <ul>
+                    <li>Nader tot God, en Hy sal tot julle nader. Reinig die hande, julle sondaars, en suiwer die harte,
+                        julle
+                        dubbelhartiges!
+                    </li>
+                </ul>
+            </li>
+            <li>Jeremia 29:13
+                <ul>
+                    <li>En julle sal My soek en vind as julle na My vra met julle hele hart.</li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+    <li>Die Heilige Gees
+        <ul>
+            <li>Johannes 14:26
+                <ul>
+                    <li>maar die Trooster, die Heilige Gees, wat die Vader in my Naam sal stuur, Hy sal julle alles leer
+                        en sal
+                        julle herinner aan alles wat Ek vir julle ges&#234; het.
+                    </li>
+                </ul>
+            </li>
+            <li>Johannes 16:13
+                <ul>
+                    <li>Maar wanneer Hy gekom het, die Gees van die waarheid, sal Hy julle in die hele waarheid lei;
+                        want Hy sal nie
+                        uit Homself spreek nie, maar alles wat Hy hoor, sal Hy spreek en die toekomstige dinge aan julle
+                        verkondig.
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+    <li>Gelei deur die Gees
+        <ul>
+            <li>Romeine 8:14
+                <ul>
+                    <li>Want almal wat deur die Gees van God gelei word, di&#233; is kinders van God.</li>
+                </ul>
+            </li>
+            <li>Johannes 10:27
+                <ul>
+                    <li>My skape luister na my stem, en Ek ken hulle, en hulle volg My.</li>
+                </ul>
+            </li>
+            <li>Galasi&#235;rs5:16
+                <ul>
+                    <li>Maar ek s&#234;: Wandel deur die Gees, dan sal julle nooit die begeerlikheid van die vlees volbring
+                        nie;
+                    </li>
+                </ul>
+            </li>
+            <li>Galasi&#235;rs5:18
+                <ul>
+                    <li>Maar as julle deur die Gees gelei word, dan is julle nie onder die wet nie.</li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+    <li>Wonderwerke
+        <ul>
+            <li>Die Handelinge van die Apostels 1:8
+                <ul>
+                    <li>maar julle sal krag ontvang wanneer die Heilige Gees oor julle kom, en julle sal my getuies wees
+                        in
+                        Jerusalem sowel as in die hele Jud&#233;a en Samar&#233;a en tot aan die uiterste van die aarde.
+                    </li>
+                </ul>
+            </li>
+            <li>Markus 16:17 - 18
+                <ul>
+                    <li>En vir die wat geglo het, sal hierdie tekens volg: in my Naam sal hulle duiwels uitdryf, met
+                        nuwe tale sal
+                        hulle spreek, slange sal hulle opneem; en as hulle iets dodeliks drink, sal dit hulle geen kwaad
+                        doen nie;
+                        op siekes sal hulle die hande l&#234;, en hulle sal gesond word.
+                    </li>
+                </ul>
+            </li>
+            <li>1 Korinti&#235;rs 12:8 - 10
+                <ul>
+                    <li>Want aan die een word deur die Gees 'n woord van wysheid gegee, en aan die ander 'n woord van
+                        kennis vanwe&#235;
+                        dieselfde Gees; aan 'n ander weer geloof deur dieselfde Gees, en aan 'n ander genadegawes van
+                        gesondmaking
+                        deur dieselfde Gees; aan 'n ander werkinge van kragte, aan 'n ander profesie, aan 'n ander
+                        onderskeiding van
+                        die geeste, aan 'n ander allerhande tale, aan 'n ander uitleg van tale.
+                    </li>
+                </ul>
+            </li>
+            <li>Johannes 7:38
+                <ul>
+                    <li>Hy wat in My glo, soos die Skrif s&#234;: strome van lewende water sal uit sy binneste vloei.</li>
+                </ul>
+            </li>
+            <li>1 Korinti&#235;rs 2:4
+                <ul>
+                    <li>en my rede en my prediking was nie in oorredende woorde van menslike wysheid nie, maar in die
+                        betoning van
+                        gees en krag,
+                    </li>
+                </ul>
+            </li>
+            <li>1 Korinti&#235;rs 4:20
+                <ul>
+                    <li>want die koninkryk van God bestaan nie in woorde nie, maar in krag.</li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+    <li>Verlossing en vryheid
+        <ul>
+            <li>Johannes 3:16
+                <ul>
+                    <li>Want so lief het God die w&#234;reld gehad, dat Hy sy eniggebore Seun gegee het, sodat elkeen wat in
+                        Hom glo, nie
+                        verlore mag gaan nie, maar die ewige lewe kan h&#234;.
+                    </li>
+                </ul>
+            </li>
+            <li>Efesi&#235;rs 2:8
+                <ul>
+                    <li>Want uit genade is julle gered, deur die geloof, en dit nie uit julleself nie: dit is die gawe
+                        van God;
+                    </li>
+                </ul>
+            </li>
+            <li>Johannes 3:3
+                <ul>
+                    <li>Jesus antwoord en s&#234; vir hom: Voorwaar, voorwaar Ek s&#234; vir jou, as iemand nie weer gebore word
+                        nie, kan hy
+                        die koninkryk van God nie sien nie.
+                    </li>
+                </ul>
+            </li>
+            <li>2 Korinti&#235;rs 5:17
+                <ul>
+                    <li>Daarom, as iemand in Christus is, is hy 'n nuwe skepsel; die ou dinge het verbygegaan, kyk, dit
+                        het alles
+                        nuut geword.
+                    </li>
+                </ul>
+            </li>
+            <li>Psalms 103:12
+                <ul>
+                    <li>So ver as die ooste verwyderd is van die weste, so ver verwyder Hy ons oortredinge van ons.</li>
+                </ul>
+            </li>
+            <li>Johannes 8:36
+                <ul>
+                    <li>As die Seun julle dan vrygemaak het, sal julle waarlik vry wees.</li>
+                </ul>
+            </li>
+            <li>2 Korinti&#235;rs 3:17
+                <ul>
+                    <li>Die Here is die Gees, en waar die Gees van die Here is, daar is vryheid.</li>
+                </ul>
+            </li>
+            <li>Johannes 11:25
+                <ul>
+                    <li>Jesus s&#234; vir haar: Ek is die opstanding en die lewe; wie in My glo, sal lewe al het hy ook
+                        gesterwe;
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+    <li>Aanmoediging
+        <ul>
+            <li>Romeine 8:28
+                <ul>
+                    <li>En ons weet dat vir hulle wat God liefhet, alles ten goede meewerk, vir hulle wat na sy voorneme
+                        geroep
+                        is.
+                    </li>
+                </ul>
+            </li>
+            <li>Psalms 46:1
+                <ul>
+                    <li>Vir die musiekleier. Van die kinders van Korag. Met sopraanstemme. 'n Lied.</li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+    <li>Beskerming
+        <ul>
+            <li>Psalms 7:10
+                <ul>
+                    <li>Laat tog die boosheid van die goddelose mense 'n einde neem, maar bevestig U die regverdige, ja,
+                        U wat harte
+                        en niere toets, o regverdige God!
+                    </li>
+                </ul>
+            </li>
+            <li>Psalms 91:9 - 10
+                <ul>
+                    <li>Want U, HERE, is my toevlug. Die Allerhoogste het jy jou beskutting gemaak. Geen onheil sal jou
+                        tref en geen
+                        plaag naby jou tent kom nie;
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+    <li>Bemagtiging
+        <ul>
+            <li>Filippense 4:13
+                <ul>
+                    <li>Ek is tot alles in staat deur Christus wat my krag gee.</li>
+                </ul>
+            </li>
+            <li>2 Timoteus 1:7
+                <ul>
+                    <li>Want God het ons nie 'n gees van vreesagtigheid gegee nie, maar van krag en liefde en
+                        selfbeheersing.
+                    </li>
+                </ul>
+            </li>
+            <li>1 Johannes 4:4
+                <ul>
+                    <li>Julle is uit God, my kinders, en het hulle oorwin, omdat Hy wat in julle is, groter is as hy wat
+                        in die
+                        w&#234;reld is.
+                    </li>
+                </ul>
+            </li>
+            <li>Romeine 8:31
+                <ul>
+                    <li>Wat sal ons dan van hierdie dinge s&#234;? As God v&#237;r ons is, wie kan teen ons wees?</li>
+                </ul>
+            </li>
+            <li>Romeine 8:37
+                <ul>
+                    <li>Maar in al hierdie dinge is ons meer as oorwinnaars deur Hom wat ons liefgehad het.</li>
+                </ul>
+            </li>
+            <li>Mattheus 19:26
+                <ul>
+                    <li>Maar Jesus het hulle aangekyk en vir hulle ges&#234;: By mense is dit onmoontlik, maar by God is alle
+                        dinge
+                        moontlik.
+                    </li>
+                </ul>
+            </li>
+            <li>Markus 9:23
+                <ul>
+                    <li>En Jesus s&#234; vir hom: Wat dit betref--as jy kan glo, alle dinge is moontlik vir die een wat
+                        glo.
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+    <li>God met my
+        <ul>
+            <li>Romeine 8:38 - 39
+                <ul>
+                    <li>Want ek is versekerd dat geen dood of lewe of engele of owerhede of magte of teenwoordige of
+                        toekomende
+                        dinge of hoogte of diepte of enige ander skepsel ons sal kan skei van die liefde van God wat
+                        daar in
+                        Christus Jesus, onse Here, is nie.
+                    </li>
+                </ul>
+            </li>
+            <li>Hebrers 13:5
+                <ul>
+                    <li>Julle gedrag moet vry van geldgierigheid wees. Wees tevrede met wat julle het, want Hy het ges&#234;:
+                        Ek sal jou
+                        nooit begewe en jou nooit verlaat nie.
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+    <li>Gesondheid
+        <ul>
+            <li>Jesaga 53:5
+                <ul>
+                    <li>Maar Hy is ter wille van ons oortredinge deurboor, ter wille van ons ongeregtighede is Hy
+                        verbrysel; die
+                        straf wat vir ons die vrede aanbring, was op Hom, en deur sy wonde het daar vir ons genesing
+                        gekom.
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+    <li>Legalisme
+        <ul>
+            <li>Romeine 8:1 - 2
+                <ul>
+                    <li>Daar is dan nou geen veroordeling vir die wat in Christus Jesus is nie, vir die wat nie na die
+                        vlees wandel
+                        nie, maar na die Gees. Want die wet van die Gees van die lewe in Christus Jesus het my vrygemaak
+                        van die wet
+                        van die sonde en die dood.
+                    </li>
+                </ul>
+            </li>
+            <li>Kolossense 2:13 - 14
+                <ul>
+                    <li>En julle, wat dood was deur die misdade en die onbesnedenheid van julle vlees, het Hy saam met
+                        Hom lewend
+                        gemaak deurdat Hy julle al die misdade vergeef het, en die skuldbrief teen ons, wat met sy
+                        insettinge ons
+                        vyandig was, uitgedelg en weggeruim het deur dit aan die kruis vas te nael,
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+    <li>Voorsiening
+        <ul>
+            <li>Filippense 4:19
+                <ul>
+                    <li>En my God sal elke behoefte van julle vervul na sy rykdom in heerlikheid deur Christus Jesus.
+                    </li>
+                </ul>
+            </li>
+            <li>Psalms 23:6
+                <ul>
+                    <li>Net goedheid en guns sal my volg al die dae van my lewe; en ek sal in die huis van die HERE bly
+                        in lengte
+                        van dae.
+                    </li>
+                </ul>
+            </li>
+            <li>Psalms 27:13
+                <ul>
+                    <li>o, As ek nie geglo het dat ek die goedheid van die HERE sal sien in die land van die lewendes
+                        nie....
+                    </li>
+                </ul>
+            </li>
+            <li>Jeremia 29:11
+                <ul>
+                    <li>Want ek weet watter gedagtes Ek aangaande julle koester, spreek die HERE, gedagtes van vrede en
+                        nie van
+                        onheil nie, om julle 'n hoopvolle toekoms te gee.
+                    </li>
+                </ul>
+            </li>
+            <li>Johannes 10:10
+                <ul>
+                    <li>Die dief kom net om te steel en te slag en te verwoes. Ek het gekom, dat hulle lewe en oorvloed
+                        kan h&#234;.
+                    </li>
+                </ul>
+            </li>
+            <li>Psalms 112:3
+                <ul>
+                    <li>He. Oorvloed en rykdom is in sy huis; Wau. en sy geregtigheid bestaan tot in ewigheid.</li>
+                </ul>
+            </li>
+
+        </ul>
+    </li>
+    <li>Kinders
+        <ul>
+            <li>Psalms 112:2
+                <ul>
+                    <li>Gimel. Sy nageslag sal geweldig wees op die aarde; Dalet. die geslag van die opregtes sal gese&#235;n
+                        word.
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+    <li>Character
+        <ul>
+            <li>Mattheus 5:3 - 10
+                <ul>
+                    <li>Salig is die wat arm van gees is, want aan hulle behoort die koninkryk van die hemele. Salig is
+                        die wat
+                        treur, want hulle sal vertroos word. Salig is die sagmoediges, want hulle sal die aarde be&#235;rwe.
+                        Salig is die
+                        wat honger en dors na die geregtigheid, want hulle sal versadig word. Salig is die barmhartiges,
+                        want aan
+                        hulle sal barmhartigheid bewys word. Salig is die wat rein van hart is, want hulle sal God sien.
+                        Salig is
+                        die vredemakers, want hulle sal kinders van God genoem word. Salig is die wat vervolg word ter
+                        wille van die
+                        geregtigheid, want aan hulle behoort die koninkryk van die hemele.
+                    </li>
+                </ul>
+            </li>
+            <li>Efesi&#235;rs 6:10 - 18
+                <ul>
+                    <li>Eindelik, my broeders, word kragtig in die Here en in die krag van sy sterkte. Trek die volle
+                        wapenrusting
+                        van God aan, sodat julle staande kan bly teen die liste van die duiwel. Want ons worstelstryd is
+                        nie teen
+                        vlees en bloed nie, maar teen die owerhede, teen die magte, teen die w&#234;reldheersers van die
+                        duisternis van
+                        hierdie eeu, teen die bose geeste in die lug. Daarom, neem die volle wapenrusting van God op,
+                        sodat julle
+                        weerstand kan bied in die dag van onheil en, nadat julle alles volbring het, staande kan bly.
+                        Staan dan vas,
+                        julle lendene met die waarheid omgord, met die borswapen van die geregtigheid aan, en as skoene
+                        aan julle
+                        voete die bereidheid vir die evangelie van vrede. Behalwe dit alles neem die skild van die
+                        geloof op waarmee
+                        julle al die vurige pyle van die Bose sal kan uitblus. En neem aan die helm van verlossing en
+                        die swaard van
+                        die Gees--dit is die woord van God-- terwyl julle met alle gebed en smeking by elke geleentheid
+                        bid in die
+                        Gees, en juis daartoe waak met alle volharding en smeking vir al die heiliges
+                    </li>
+                </ul>
+            </li>
+            <li>Filippense 4:8
+                <ul>
+                    <li>Verder, broeders, alles wat waar is, alles wat eerbaar is, alles wat regverdig is, alles wat
+                        rein is, alles
+                        wat lieflik is, alles wat loflik is--watter deug en watter lof daar ook mag wees, bedink dit.
+                    </li>
+                </ul>
+            </li>
+            <li>Mattheus 6:33
+                <ul>
+                    <li>Maar soek eers die koninkryk van God en sy geregtigheid, en al hierdie dinge sal vir julle
+                        bygevoeg word.
+                    </li>
+                </ul>
+            </li>
+            <li>Johannes 3:30
+                <ul>
+                    <li>Hy moet meer word, maar ek minder.</li>
+                </ul>
+            </li>
+            <li>1 Timoteus 4:7
+                <ul>
+                    <li>Maar verwerp onheilige en oudwyfse fabels, en oefen jou in die godsaligheid.</li>
+                </ul>
+            </li>
+            <li>Lukas 6:45
+                <ul>
+                    <li>Die goeie mens bring uit die goeie skat van sy hart te voorskyn wat goed is; en die slegte mens
+                        bring uit
+                        die slegte skat van sy hart te voorskyn wat sleg is; want uit die oorvloed van die hart spreek
+                        sy mond.
+                    </li>
+                </ul>
+            </li>
+            <li>Lukas 14:11
+                <ul>
+                    <li>Want elkeen wat homself verhoog, sal verneder word, en wat homself verneder, sal verhoog word.
+                    </li>
+                </ul>
+            </li>
+            <li>Efesi&#235;rs 4:29
+                <ul>
+                    <li>Laat daar geen vuil woord uit julle mond uitgaan nie, maar net 'n woord wat goed is vir die
+                        nodige stigting,
+                        sodat dit genade kan gee aan die wat dit hoor.
+                    </li>
+                </ul>
+            </li>
+            <li>Spreuke van Salomo 18:21
+                <ul>
+                    <li>Dood en lewe is in die mag van die tong; en elkeen wat dit graag gebruik, sal die vrug daarvan
+                        eet.
+                    </li>
+                </ul>
+            </li>
+
+        </ul>
+    </li>
+</ul>
+
+
 <script>
     document.querySelectorAll("body>ul>li").forEach(function (i, idx) {
         var ul = Array.from(i.children)[0];
@@ -792,17 +1613,20 @@
         var fc = i.firstChild;
         var txt = fc.textContent;
         fc.textContent = txt + " (" + cnt + ")";
+
     });
 
     document.querySelectorAll("body>ul>li>ul>li").forEach(function (i, idx) {
         var arr = Array.from(i.children);
         var cx = arr[0].innerText;
+        cx = cx.trim();
         var i1 = cx.indexOf(" ") + 1;
         var i2 = cx.indexOf(" ", i1) + 1;
         var i3 = cx.indexOf(" ", i2) + 1;
-        var s = "(" + cx.substring(1, i3).trim() + ")";
+        var s = "(" + cx.substring(0, i3).trim() + "...)";
         var span = document.createElement("span");
         var txt = document.createTextNode(s);
+        //span.style = "text-decoration: underline";
         span.appendChild(txt);
         span.classList.add("hint");
         span.style.display = "none";
@@ -864,6 +1688,29 @@
         });
     }
 
+    function changeLang() {
+        let cls = document.getElementById("lang").value;
+
+        document.querySelectorAll(".lang").forEach(function (i, idx) {
+            if (i.classList.contains(cls)) {
+                i.style.display = "inherit";
+            } else {
+                i.style.display = "none";
+            }
+        });
+    }
+
+    function changeDisplayStyle(btn) {
+        if (!btn.classList.contains('collapsed')) {
+            btn.classList.add('collapsed');
+            hideVerse();
+            btn.innerHTML = "+";
+        } else {
+            btn.classList.remove('collapsed');
+            showAll();
+            btn.innerHTML = "-";
+        }
+    }
 </script>
 </body>
 <html>
